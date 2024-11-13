@@ -2780,11 +2780,17 @@
     }
 }
 .section-contact{
+    background: #fff;
     padding: 40px 0;
     img{
         width: 100%;
     }
-  
+    .box-contact{
+        padding: 80px 0;
+        @media (max-width: 991px) {
+            padding: 40px 0;
+        }
+    }
     @media (max-width: 767px) {
         .form-donggop{
             margin-top: 20px;
@@ -2842,7 +2848,10 @@
                     display: flex;
                     align-items: start;
                     gap: 10px;
-                    
+                    margin-bottom: 16px;
+                    &:not(:last-child){
+                      
+                    }
                 }
             }
         }
