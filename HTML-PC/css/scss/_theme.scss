@@ -583,7 +583,7 @@
 }
 .section-product {
     padding: 20px 0;
-    
+    background: var(--Linear, linear-gradient(180deg, #FEF7EE 0%, #FFF 100%));
     @media (max-width:767px) {
         padding: 10px 0;
         
@@ -1107,7 +1107,9 @@
 
     .wrap-news {
         display: flex;
-
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
         &.cat-menu {
             align-items: center;
         }
@@ -1135,7 +1137,7 @@
         .siderbar-news,
         .top-siderbar-news {
             width: 33%;
-
+           
             @media (min-width:992px) {
                 min-width: 280px;
             }
@@ -1490,6 +1492,8 @@
     }
 
     .siderbar-news {
+        align-self: flex-start;
+      
         @media (max-width:991px) {
             margin-top: 20px;
         }
@@ -2716,6 +2720,9 @@
                 font-weight: 800;
                 line-height: 120%; /* 43.2px */
                 text-transform: uppercase;
+                @media (max-width: 767px) {
+                    font-size: 24px;
+                }
             }
             .xemthem{
                 color: #1349D4;
@@ -2746,6 +2753,9 @@
             font-weight: 800;
             line-height: 120%; /* 43.2px */
             text-transform: uppercase;
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
         }
         .xemthem{
             color: #1349D4;
@@ -3265,6 +3275,9 @@
             border: 1px solid #F0F7FD;
             background: rgba(255, 255, 255, 0.20);
         }
+        textarea{
+            height: auto;
+        }
         .select2-container--default .select2-selection--single .select2-selection__rendered{
             line-height: 40px;
             color: #fff;
@@ -3327,5 +3340,26 @@
                 margin-bottom: 8px;
             }
         }
+    }
+}
+.banner-breadcrumb{
+    position: relative;
+    .breadcrumb{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding-bottom: 40px;
+        background: linear-gradient(180deg, rgba(15, 40, 66, 0.00) 0%, rgba(15, 40, 66, 0.80) 68%);
+        a{
+            color: #fff !important;
+        }
+        li:after{
+            color: #fff;
+        }
+        @media (max-width:767px) {
+              padding-bottom: 10px;
+        }
+
     }
 }
