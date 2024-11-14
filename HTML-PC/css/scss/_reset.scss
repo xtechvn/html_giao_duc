@@ -416,8 +416,8 @@ button,
 
     input:checked {
         &+label::before {
-            border: 1px solid #FD5023;
-            background: #FD5023;
+            border: 1px solid var(--color-base1);
+            background: #fff;
 
         }
 
@@ -425,11 +425,11 @@ button,
             content: '';
             display: block;
             position: absolute;
-            top: 3px;
+            top: 4px;
             left: 8px;
             width: 6px;
             height: 13px;
-            border: solid #fff;
+            border: solid var(--color-base1);
             border-width: 0 2px 2px 0;
             transform: rotate(45deg);
         }
@@ -740,7 +740,13 @@ button,
         }
     }
 }
-
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    @media (max-width:767px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
 .section-news-detail {
     .content {
         .thumb-art {
@@ -979,9 +985,14 @@ button,
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                padding: 16px;
+                padding: 16px 10px;
                 border-bottom: 1px solid  #8AC2EF;
                 background: #E3EEFB;
+                color:  #11233A;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 150%; /* 27px */
+                text-transform: uppercase;
                 position: relative;
                 a{
                     display: flex;
@@ -994,14 +1005,17 @@ button,
                     height: 24px;
                     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M20.0306 10.0306L12.5306 17.5306C12.461 17.6003 12.3782 17.6557 12.2872 17.6934C12.1961 17.7312 12.0986 17.7506 12 17.7506C11.9014 17.7506 11.8038 17.7312 11.7128 17.6934C11.6217 17.6557 11.539 17.6003 11.4694 17.5306L3.96936 10.0306C3.82863 9.88988 3.74957 9.69901 3.74957 9.49999C3.74957 9.30097 3.82863 9.11009 3.96936 8.96936C4.1101 8.82863 4.30097 8.74957 4.49999 8.74957C4.69901 8.74957 4.88988 8.82863 5.03061 8.96936L12 15.9397L18.9694 8.96936C19.039 8.89968 19.1218 8.84441 19.2128 8.80669C19.3039 8.76898 19.4014 8.74957 19.5 8.74957C19.5985 8.74957 19.6961 8.76898 19.7872 8.80669C19.8782 8.84441 19.9609 8.89968 20.0306 8.96936C20.1003 9.03905 20.1556 9.12177 20.1933 9.21282C20.231 9.30386 20.2504 9.40144 20.2504 9.49999C20.2504 9.59854 20.231 9.69612 20.1933 9.78716C20.1556 9.87821 20.1003 9.96093 20.0306 10.0306Z" fill="%2311233A"/></svg>');
                 }
-                
+                .time{
+                    color:  #5A5D72;
+                    font-size: 18px;
+                    font-weight: normal;
+                    text-transform: none;
+                }
             }
-            .time{
-                color:  #5A5D72;
-            }
+            
             .card-body{
                 li{
-                    padding: 16px;
+                    padding: 16px 10px;
                     display: flex;
                     align-items: center;
                     width: 100%;
