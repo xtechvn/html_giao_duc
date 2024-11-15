@@ -262,12 +262,10 @@ button.mfp-close {
 
 .title-popup {
   text-align: center;
-  font-size: 18px;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 -30px 25px;
+  font-size: 24px;
+  color: var(--color-base);
+  text-transform: uppercase;
   font-weight: bold;
-  border-bottom: 1px solid #e0e0e0;
 }
 
 /////////////custom
@@ -470,7 +468,7 @@ button.mfp-close {
 
       .box-radio {
           position: absolute;
-          right: 20px;
+          right: 10px;
           top: 10px;
 
           @media (max-width:767px) {
@@ -479,16 +477,16 @@ button.mfp-close {
       }
 
       .img {
-          min-width: 100px;
-          width: 100px;
+          height:80px;
       }
 
       .info {
-          padding: 15px;
+          padding: 8px;
 
           .name {
               font-size: 16px;
               font-weight: 700;
+              text-transform: uppercase;
               line-height: 24px;
               margin-bottom: 20px;
 
@@ -505,8 +503,8 @@ button.mfp-close {
 
           .link {
               position: absolute;
-              bottom: 20px;
-              right: 20px;
+              bottom: 10px;
+              right: 10px;
               font-size: 13px;
               font-weight: 400;
               color: #FD5023;
@@ -569,11 +567,11 @@ button.mfp-close {
 
           .btn-save {
               position: absolute;
-              right: 6px;
+              right: 4px;
               padding: 0 24px;
-              top: 6px;
-              height: 35px;
-              line-height: 35px;
+              top: 3px;
+              height: 33px;
+              line-height: 33px;
               border-radius: 24px;
               color: #1F7CCC;
               font-weight: 500;
@@ -813,7 +811,27 @@ button.mfp-close {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 0;
     }
-}
+  }
+  .select-bank{
+    .list-option{
+      .item{
+        margin-top: 24px;
+        label{
+          display: flex;
+          align-items: start;
+          gap: 15px;
+          img{
+            position: relative;
+            top: -5px;
+          }
+          span{
+            display: block;
+            margin-top:5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
