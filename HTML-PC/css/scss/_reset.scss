@@ -70,14 +70,44 @@ input {
         box-shadow: none;
     }
 }
-
-.form-control {
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control{
     border-radius: 24px;
     border: 1px solid #EBEBEB;
     padding-right: 25px;
     &:focus{
         outline: none;
         box-shadow: none;
+    }
+}
+.select2-container--default .select2-selection--single{
+    border-radius: 24px;
+    height: 40px;
+    color: #11233A;
+    border: 1px solid #EBEBEB;
+    background: #fff;
+}
+textarea{
+    height: auto;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 40px;
+    color: #11233A;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 3px;
+    right: 8px;
+    b{
+        border-color: #EBEBEB;
+        border-right: 1px solid #EBEBEB;
+        border-bottom: 1px solid #EBEBEB;
+        width: 7px;
+        height: 7px;
+        transform: rotate(45deg);
+        border-left: 0 solid #000;
+        border-top: 0 solid #000;
     }
 }
 .menu_before{
@@ -90,7 +120,7 @@ button,
     outline: none;
     cursor: pointer;
     text-align: center;
-    padding: 6px 16px;
+    padding: 9px 16px;
     font-weight: 500;
     border-radius: 24px;
     display: inline-block;

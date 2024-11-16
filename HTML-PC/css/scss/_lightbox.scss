@@ -344,7 +344,15 @@ button.mfp-close {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+      row-gap: 10px;
       margin-top: 25px;
+      @media (max-width:767px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .btn{
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
   }
 
   .btn-login-fb {
@@ -492,6 +500,7 @@ button.mfp-close {
 
               @media (max-width:767px) {
                   margin-bottom: 5px;
+                  text-transform: none;
               }
           }
 
@@ -617,6 +626,10 @@ button.mfp-close {
   
         input {
             padding-right: 175px;
+            @media (max-width:767px) {
+              padding-right: 10px;
+            }
+
         }
   
         .resend {
@@ -631,6 +644,7 @@ button.mfp-close {
             @media (max-width:767px) {
                 position: static;
                 margin-top: 5px;
+                padding-top: 0;
                 font-size: 12px;
                 height: 30px;
                 line-height: 30px;

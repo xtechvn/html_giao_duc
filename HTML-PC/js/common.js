@@ -174,7 +174,7 @@ $(document).ready(function () {
         }
     });
     //select2
-    $('.select2').select2();
+    $('select').select2();
 
     $('.open-popup-link').magnificPopup({
         type: 'inline',
@@ -186,5 +186,14 @@ $(document).ready(function () {
         closeBtnInside: true,
         preloader: false,
         removalDelay: 300,
+    });
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("active");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
     });
 });
