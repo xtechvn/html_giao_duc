@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple Email</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .btn-default {
+            display: inline-block;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 40px;
+            border-radius: 10px;
+            padding: 0 24px;
+            text-align: center;
+            background: #FF5B00;
+            transition: 0.2s all;
+            border: 1px solid #FF5B00;
+            cursor: pointer;
+        }
+        
+        .btn-default.gray {
+            background: #E3EBF3;
+            color: #00264D;
+            border: 1px solid #E3EBF3;
+        }
+        
+        .btn-default.full {
+            width: 100%;
+        }
+        
+        table td {
+            padding: 6px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f6f6f6; font-family:Arial; -webkit-font-smoothing: antialiased; font-size: 14px;color: #00264D; line-height: 1.4;max-width: 650px; margin: 0 auto; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <!-- Bammboo -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%;">
+        <tr>
+            <td class="container" style="padding: 0;background: #fff url(images/email/Mask.png) no-repeat right 0 top 0;">
+                <div class="content" style="margin: 0 auto;box-sizing: border-box; display: block; padding: 15px 20px;">
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div style="margin-bottom: 10px;">
+                                        <img width="180px" src="images/graphics/Bamboo_Airways_Logo.png">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 10px;background: rgba(88, 211, 243, .2);border-top: 1px solid rgba(88, 211, 243, .8);border-bottom: 1px solid rgba(88, 211, 243, .8);">
+                                    <div>Mã đặt chỗ:</div>
+                                    <div><b>G2R4Y4</b></div>
+                                </td>
+                                <td style="padding: 10px;background: rgba(88, 211, 243, .2);text-align: right;border-top: 1px solid rgba(88, 211, 243, .8);border-bottom:1px solid rgba(88, 211, 243, .8);">
+                                    <div>Tình trạng:</div>
+                                    <div>Đã xác nhận</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH KHÁCH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">STT</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Tên khách hàng</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">
+                                    <div>Hành lý ký gửi</div>
+                                    <div>HAN - HUI</div>
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">1</td>
+                                <td style="border: 1px solid #999; padding: 8px;">HOANH THI ANH NGOC</td>
+                                <td style="border: 1px solid #999; padding: 8px;">20kg ký gửi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH TRÌNH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Chuyến bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Ngày bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đi</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ đến</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đến</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">QH 102</td>
+                                <td style="border: 1px solid #999; padding: 8px;">11/11/2023</td>
+                                <td style="border: 1px solid #999; padding: 8px;">8:35</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Hà Nội</td>
+                                <td style="border: 1px solid #999; padding: 8px;">19:55</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Huế</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Pacific_Airlines -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%;">
+        <tr>
+            <td class="container" style="padding: 0;background: #fff url(images/email/Mask.png) no-repeat right 0 top 0;">
+                <div class="content" style="margin: 0 auto;box-sizing: border-box; display: block; padding: 15px 20px;">
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <div style="margin-bottom: 10px;">
+                                        <img width="220px" src="images/graphics/Logo_Pacific_Airlines.png">
+                                    </div>
+                                </td>
+                                <td style="text-align: right;">
+                                    <div><b>ADAVIGO</b></div>
+                                    <div>289A - Khuất Duy TIến - Hà Nội</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 10px;background: rgba(88, 211, 243, .2);border-top: 1px solid rgba(88, 211, 243, .8);border-bottom: 1px solid rgba(88, 211, 243, .8);">
+                                    <div>Mã đặt chỗ:</div>
+                                    <div><b>G2R4Y4</b></div>
+                                </td>
+                                <td style="padding: 10px;background: rgba(88, 211, 243, .2);text-align: right;border-top: 1px solid rgba(88, 211, 243, .8);border-bottom:1px solid rgba(88, 211, 243, .8);">
+                                    <div>Tình trạng:</div>
+                                    <div>Đã xác nhận</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH KHÁCH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">STT</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Tên khách hàng</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">
+                                    <div>Hành lý ký gửi</div>
+                                    <div>HAN - HUI</div>
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">1</td>
+                                <td style="border: 1px solid #999; padding: 8px;">HOANH THI ANH NGOC</td>
+                                <td style="border: 1px solid #999; padding: 8px;">20kg ký gửi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH TRÌNH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Chuyến bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Ngày bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đi</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ đến</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đến</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">QH 102</td>
+                                <td style="border: 1px solid #999; padding: 8px;">11/11/2023</td>
+                                <td style="border: 1px solid #999; padding: 8px;">8:35</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Hà Nội</td>
+                                <td style="border: 1px solid #999; padding: 8px;">19:55</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Huế</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- VietJet -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%;">
+        <tr>
+            <td class="container" style="padding: 0;background: #fff url(images/email/Mask.png) no-repeat right 0 top 0;">
+                <div class="content" style="margin: 0 auto;box-sizing: border-box; display: block; padding: 15px 20px;">
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div style="margin-bottom: 10px;">
+                                        <img width="180px" style="background-color: #fff;" src="images/graphics/logo-vietjet.png">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 10px;background: rgba(88, 211, 243, .2);border-top: 1px solid rgba(88, 211, 243, .8);border-bottom: 1px solid rgba(88, 211, 243, .8);">
+                                    <div>Mã đặt chỗ:</div>
+                                    <div><b>G2R4Y4</b></div>
+                                </td>
+                                <td style="padding: 10px;background: rgba(88, 211, 243, .2);text-align: right;border-top: 1px solid rgba(88, 211, 243, .8);border-bottom:1px solid rgba(88, 211, 243, .8);">
+                                    <div>Tình trạng:</div>
+                                    <div>Đã xác nhận</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH KHÁCH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">STT</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Tên khách hàng</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">
+                                    <div>Hành lý ký gửi</div>
+                                    <div>HAN - HUI</div>
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">1</td>
+                                <td style="border: 1px solid #999; padding: 8px;">HOANH THI ANH NGOC</td>
+                                <td style="border: 1px solid #999; padding: 8px;">20kg ký gửi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH TRÌNH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Chuyến bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Ngày bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đi</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ đến</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đến</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">QH 102</td>
+                                <td style="border: 1px solid #999; padding: 8px;">11/11/2023</td>
+                                <td style="border: 1px solid #999; padding: 8px;">8:35</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Hà Nội</td>
+                                <td style="border: 1px solid #999; padding: 8px;">19:55</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Huế</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- Vietnam Arline -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%;">
+        <tr>
+            <td class="container" style="padding: 0;background: #fff url(images/email/Mask.png) no-repeat right 0 top 0;">
+                <div class="content" style="margin: 0 auto;box-sizing: border-box; display: block; padding: 15px 20px;">
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div style="margin-bottom: 10px;">
+                                        <img width="240px" style="background-color: #fff;" src="images/graphics/Vietnam_Airlines_logo.png">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 10px;background: rgba(88, 211, 243, .2);border-top: 1px solid rgba(88, 211, 243, .8);border-bottom: 1px solid rgba(88, 211, 243, .8);">
+                                    <div>Mã đặt chỗ:</div>
+                                    <div><b>G2R4Y4</b></div>
+                                </td>
+                                <td style="padding: 10px;background: rgba(88, 211, 243, .2);text-align: right;border-top: 1px solid rgba(88, 211, 243, .8);border-bottom:1px solid rgba(88, 211, 243, .8);">
+                                    <div>Tình trạng:</div>
+                                    <div>Đã xác nhận</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH KHÁCH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">STT</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Tên khách hàng</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">
+                                    <div>Hành lý ký gửi</div>
+                                    <div>HAN - HUI</div>
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">1</td>
+                                <td style="border: 1px solid #999; padding: 8px;">HOANH THI ANH NGOC</td>
+                                <td style="border: 1px solid #999; padding: 8px;">20kg ký gửi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="border: 0; border-spacing: 0; text-indent: 0; border-collapse: collapse; font-size: 13px; width: 100%; margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="padding: 0 0 10px 0;">THÔNG TIN HÀNH TRÌNH</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Chuyến bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Ngày bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ bay</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đi</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Giờ đến</td>
+                                <td style="border: 1px solid #999; padding: 8px;font-weight: bold;">Sân bay đến</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="border: 1px solid #999; padding: 8px;">QH 102</td>
+                                <td style="border: 1px solid #999; padding: 8px;">11/11/2023</td>
+                                <td style="border: 1px solid #999; padding: 8px;">8:35</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Hà Nội</td>
+                                <td style="border: 1px solid #999; padding: 8px;">19:55</td>
+                                <td style="border: 1px solid #999; padding: 8px;">Huế</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

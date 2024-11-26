@@ -1,0 +1,220 @@
+<!-- build:title -->CMS Template
+<!-- /build:title -->
+
+<!-- build:content -->
+
+<!--SECTION CONTAINER -->
+
+<section class="section clearfix mt40">
+    <div class="container">
+        <p class="mt20">
+            <a href="#popup-thongbao" class="open-popup">Popup thông báo</a>
+        </p>
+        <p class="mt20">
+            <a href="#add-khoahoc-popup" class="open-popup">Thêm khóa học</a>
+        </p>
+        <p class="mt20">
+            <a href="#edit-khoahoc-popup" class="open-popup">Sửa khóa học</a>
+        </p>
+    </div>
+</section>
+
+
+<!--POPUP THONG BÁO -->
+<div id="popup-thongbao" class="white-popup mfp-hide">
+    <div class="content_lightbox center">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M44.4001 35.267L28.0032 6.79137C27.5934 6.09373 27.0085 5.51528 26.3063 5.11336C25.6041 4.71144 24.8091 4.5 24.0001 4.5C23.191 4.5 22.396 4.71144 21.6938 5.11336C20.9916 5.51528 20.4067 6.09373 19.9969 6.79137L3.60006 35.267C3.20581 35.9418 2.99805 36.7092 2.99805 37.4907C2.99805 38.2723 3.20581 39.0397 3.60006 39.7145C4.00455 40.4164 4.5885 40.998 5.29199 41.3996C5.99547 41.8013 6.79315 42.0085 7.60318 42.0001H40.3969C41.2063 42.0079 42.0032 41.8003 42.706 41.3987C43.4088 40.997 43.9921 40.4158 44.3963 39.7145C44.7911 39.0401 44.9995 38.2728 45.0002 37.4913C45.0009 36.7097 44.7937 35.9421 44.4001 35.267ZM22.5001 19.5001C22.5001 19.1023 22.6581 18.7208 22.9394 18.4395C23.2207 18.1582 23.6022 18.0001 24.0001 18.0001C24.3979 18.0001 24.7794 18.1582 25.0607 18.4395C25.342 18.7208 25.5001 19.1023 25.5001 19.5001V27.0001C25.5001 27.3979 25.342 27.7795 25.0607 28.0608C24.7794 28.3421 24.3979 28.5001 24.0001 28.5001C23.6022 28.5001 23.2207 28.3421 22.9394 28.0608C22.6581 27.7795 22.5001 27.3979 22.5001 27.0001V19.5001ZM24.0001 36.0001C23.555 36.0001 23.12 35.8682 22.75 35.6209C22.38 35.3737 22.0916 35.0223 21.9213 34.6112C21.751 34.2 21.7065 33.7476 21.7933 33.3112C21.8801 32.8747 22.0944 32.4738 22.4091 32.1591C22.7237 31.8445 23.1246 31.6302 23.5611 31.5434C23.9976 31.4565 24.45 31.5011 24.8611 31.6714C25.2722 31.8417 25.6236 32.1301 25.8709 32.5001C26.1181 32.8701 26.2501 33.3051 26.2501 33.7501C26.2501 34.3469 26.013 34.9192 25.591 35.3411C25.1691 35.7631 24.5968 36.0001 24.0001 36.0001Z"
+                fill="#F3BD7E" />
+        </svg>
+
+        <div class="head mt-3">
+
+            Bạn có chắc muốn xoá khoá học này?
+        </div>
+        <div class="form-default">
+            <div class="flex align-items-center justify-center mt20 gap10">
+                <button type="submit" class="btn btn-default none mfp-close round">Hủy</button>
+                <button type="submit" class="btn btn-default orange round">Xoá vĩnh viễn</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close"></button>
+</div>
+
+
+<!--POPUP THONG BÁO -->
+<div id="edit-khoahoc-popup" class="edit-khoahoc-popup white-popup mfp-hide">
+    <div class="content_lightbox">
+        <!-- Modal Header -->
+        <div class="header">
+            <h4 class="modal-title text-uppercase mb-3">Sửa khóa học</h4>
+            <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        </div>
+        <div class="content">
+            <div class="block-course accordion">
+                <div class="item">
+                    <div class="title" id="headingOne">
+                        <a data-toggle="collapse" data-target="#collapseOne">
+                            <input class="form-control" type="text" value="Tiết 1" />
+                            <span class="time">2 video - 0 giờ 10
+                                phút</span></a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul id="sortable">
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>
+                                                <input class="form-control" type="text" value="Video 1" />
+                                            </span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <div class="thumb-video">
+                                        <div class="nothumb-add">
+                                            <input type="file" />
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#FilePlus"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="flex-tt"><input class="form-control" type="text" value="" placeholder="Vui lòng nhập tên bài giảng" /></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title" id="headingTwo">
+                        <a data-toggle="collapse" data-target="#collapseTwo">Tiết 2<span class="time">2 video - 0 giờ 10
+                                phút</span></a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                                <li class="ui-state-default">
+                                    <a href="">
+                                        <div class="thumb-video">
+                                            <img src="images/graphics/img_4.jpg">
+                                            <span class="flex-tt"><i class="play-circle"></i>Video 2.1</span>
+                                        </div>
+
+                                        <span class="time">2 video - 0 giờ 10 phút</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title title-add" id="headingThree">
+                        <a data-toggle="collapse " data-target="#collapseThree"><input class="form-control" type="text" value="" placeholder="Thêm bài giảng" /></span></a>
+                    </div>
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li class="ui-state-default">
+                                    <div class="thumb-video">
+                                        <div class="nothumb-add">
+                                            <input type="file" />
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#FilePlus"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="flex-tt"><input class="form-control" type="text" value="" placeholder="Vui lòng nhập tên bài giảng" /></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-default">
+            <div class="flex align-items-center justify-end mt20 gap10">
+                <button type="submit" class="btn btn-default none mfp-close round">Hủy</button>
+                <button type="submit" class="btn btn-default orange round">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- /build:content -->
+
+<!-- build:script2 -->
+<script>
+    $(document).ready(function () {
+        $("#sortable").sortable();
+    });
+</script>
+<!-- /build:script2 -->
