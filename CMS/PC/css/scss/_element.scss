@@ -4581,6 +4581,7 @@ label.switch {
             width: 100%;
             justify-content: space-between;
             align-items: center;
+            gap: 10px;
             cursor: pointer;
             padding: 16px 10px;
             border-bottom: 1px solid  #8AC2EF;
@@ -4609,10 +4610,11 @@ label.switch {
                 color:  #5A5D72;
                 font-size: 16px;
                 font-weight: normal;
+                white-space: nowrap;
                 text-transform: none;
             }
             input{
-                width: auto;
+                width: 100%;
                 background: none;
                 height: auto;
                 border: none;

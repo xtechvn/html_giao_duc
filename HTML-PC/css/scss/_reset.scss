@@ -126,14 +126,20 @@ button,
     display: inline-block;
 
     &.btn-base {
-        background: var(--color-base);
+        background: #1F7CCC;
         color: #FCFCFC;
+        &:hover{
+            background: #7DBAEC;
+        }
     }
 
     &.btn-line {
-        border: 1px solid var(--color-base);
+        border: 1px solid #1F7CCC;
         background: none;
-        color: var(--color-base);
+        color: #145598;
+        &:hover{
+            color: #1F7CCC;
+        }
     }
     &.btn-white{
         border: 1px solid #fff;
