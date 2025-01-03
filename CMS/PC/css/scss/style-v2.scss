@@ -923,6 +923,7 @@ label.switch {
   position: sticky;
   bottom: 0;
   left: 0;
+  z-index: 9;
   background: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -955,9 +956,14 @@ label.switch {
     }
   }
 }
-.user-hierarchy-ul{
-  li:not(:last-child){
-    margin-bottom: 10px;
+.tab-khoahoc{
+ 
+  li{
+    padding: 5px;
+    &.active{
+      background: #eee;
+      border-left: 3px solid #000;
+    }
   }
   i{
     font-size: 18px;
