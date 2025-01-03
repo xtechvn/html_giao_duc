@@ -733,12 +733,13 @@
         }
         span{
             display: block;
+            opacity: 0;
             margin-top: 4px;
         }
     }
     &:hover{
         width: 200px;
-        .nav-left ul>li>a span{
+        .nav-left ul>li>a span, .out span{
             opacity: 1;
         }
     }

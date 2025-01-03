@@ -4744,3 +4744,85 @@ label.switch {
 .custom-file-label::after {
     content: "Tải file lên";
 }
+.block-chap{
+    padding: 15px;
+    background: #F1F5F9;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    .title-block{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      
+        i{
+            cursor: pointer;
+        }
+    }
+    .tt-phan{
+        width: 60px;
+        flex-shrink: 0;
+    }
+    .box-add-chap{
+        margin-left: 70px;
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #eee;
+       margin-bottom: 16px;
+        .move{
+            opacity: 0;
+        }
+        .edit, .del{
+            display: none;
+        }
+        .title-block:hover{
+            .edit, .del{
+                display: block;
+            }
+            .move{
+                opacity: 1;
+            }
+            
+        }
+        table{
+            th{
+                border-bottom: 1px solid #eee;
+            }
+            th, td{
+                padding: 5px ;
+            }
+            i{
+                cursor: pointer;
+            }
+        }
+    }
+   
+}
+.flex-0{
+    flex-shrink: 0;
+}
+.loading{
+    display: inline-block;
+    height: 5px;
+    background: #E2E0E0;
+    width: 100%;
+    position: relative;
+    .percent{
+        background: #4EA64C;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 5px;
+    }
+}
+.box-tailieu{
+    display: block;
+    li{
+        display: flex;
+        padding: 3px 0;
+        justify-content: space-between;
+    }
+    i{
+        cursor: pointer;
+    }
+}
