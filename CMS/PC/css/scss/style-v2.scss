@@ -725,7 +725,7 @@ label.radio {
   }
   h3, h4{
     color: #163E64;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 150%; /* 21px */
     margin-bottom: 10px; 
@@ -926,7 +926,7 @@ label.switch {
   background: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
-
+  border-top: 1px solid #eee;
   .form-group {
     margin-bottom: 0;
   }

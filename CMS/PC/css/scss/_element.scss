@@ -261,7 +261,17 @@ label.switch {
         }
     }
 }
-
+.custom-input{
+    position: relative;
+    input{
+        padding-right: 50px;
+    }
+    .custom-label{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
 .check-list-label {
     display: flex;
     flex-wrap: wrap;
@@ -4727,7 +4737,10 @@ label.switch {
     }
     input,textarea{
         border-radius: 4px;
-        background: #F1F5F9;
+        background: #fff;
         color: #3D3D3D;
     }
+}
+.custom-file-label::after {
+    content: "Tải file lên";
 }
