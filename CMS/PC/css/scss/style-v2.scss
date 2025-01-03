@@ -955,7 +955,17 @@ label.switch {
     }
   }
 }
-
+.user-hierarchy-ul{
+  li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  i{
+    font-size: 18px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+  }
+}
 .page-item {
   .page-link {
     color: #474747;
