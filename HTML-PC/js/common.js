@@ -46,7 +46,7 @@ const swiperAds = new Swiper('.swiper-banner-ads', {
     }
 });
 
-const swiperClient = new Swiper('.swiper-client', {
+const swiperClient = new Swiper('.swiper-ads', {
     loop: false,
     pagination: false,
     navigation: false,

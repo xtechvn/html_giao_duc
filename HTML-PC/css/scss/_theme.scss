@@ -151,6 +151,7 @@
             img {
                 display: block;
                 margin: auto;
+                object-position: bottom;
             }
             .title{
                 color: var(--color-base1);
@@ -239,7 +240,7 @@
 }
 .banner-ads-full {
     width: 100%;
-    border-radius: 16px;
+    // border-radius: 16px;
     overflow: hidden;
 
     img {
@@ -1144,12 +1145,9 @@
 
         .siderbar-news,
         .top-siderbar-news {
-            width: 33%;
+            width: 300px;
+            flex-shrink: 0;
            
-            @media (min-width:992px) {
-                min-width: 280px;
-            }
-
             .box-side {
                 margin-bottom: 25px;
 
